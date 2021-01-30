@@ -45,11 +45,22 @@
   flex-direction: column;
 }
 
+.thumbnails {
+  display: flex;
+  flex-direction: column;
+}
+
 .haz {
   border-radius: 5px;
   align-self: center;
   width: 75%;
   margin-bottom: 3vh;
+}
+
+.audio {
+  align-self: center;
+  margin-bottom: 3vh;
+  width: 75%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -83,7 +94,7 @@
   }
 
   .footerBox {
-    margin-top: 7vh;
+    margin-top: 5vh;
   }
 
   .image2 {
@@ -99,9 +110,15 @@
   }
 
   .haz {
-    height: 13.5vw;
+    height: 17vw;
     width: auto;
     margin: 1vw;
+  }
+
+  .audio {
+    align-self: center;
+    margin-bottom: 3vh;
+    width: 85%;
   }
 
   .textBox {

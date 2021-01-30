@@ -2,8 +2,10 @@ import image1 from "./images/image1.png";
 import image2 from "./images/image4.png";
 import haz1 from "./images/haz1.png";
 import haz2 from "./images/haz2.png";
-import haz3 from "./images/haz3.jpg";
+import haz3 from "./images/haz3.png";
 import tune1 from "./media/tune1.mp3";
+import tune2 from "./media/tune2.mp3";
+import tune3 from "./media/tune3.mp3";
 import "./App.css";
 
 function App() {
@@ -28,14 +30,14 @@ function App() {
         </div>
         <div className="thumbnails">
           <img src={haz2} className="haz" alt="logo" />
-          <audio controls src={tune1} className="audio">
+          <audio controls src={tune2} className="audio">
             Your browser does not support the
             <code>audio</code> element.
           </audio>
         </div>
         <div className="thumbnails">
           <img src={haz3} className="haz" alt="logo" />
-          <audio controls src={tune1} className="audio">
+          <audio controls src={tune3} className="audio">
             Your browser does not support the
             <code>audio</code> element.
           </audio>

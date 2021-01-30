@@ -1,0 +1,112 @@
+.app {
+  text-align: center;
+  border: 20px solid;
+  border-image-source: linear-gradient(
+    rgba(14, 60, 242, 0.775),
+    rgba(255, 166, 0, 0.733)
+  );
+  border-image-slice: 1;
+}
+
+.image1 {
+  height: 30vmin;
+  pointer-events: none;
+}
+
+.headerBox {
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.footerBox {
+  margin-top: 2vh;
+}
+
+.image2 {
+  height: 30vmin;
+  pointer-events: none;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.textBox {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 3vh;
+}
+
+.hazImages {
+  display: flex;
+  flex-direction: column;
+}
+
+.haz {
+  border-radius: 5px;
+  align-self: center;
+  width: 75%;
+  margin-bottom: 3vh;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .image1 {
+    animation: pulse infinite 1.5s linear;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .image1 {
+    height: 35vmin;
+    pointer-events: none;
+  }
+
+  .headerBox {
+    min-height: 45vh;
+  }
+
+  .footerBox {
+    margin-top: 7vh;
+  }
+
+  .image2 {
+    height: 30vmin;
+    pointer-events: none;
+    margin: 2vh;
+  }
+
+  .hazImages {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .haz {
+    height: 13.5vw;
+    width: auto;
+    margin: 1vw;
+  }
+
+  .textBox {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 1vh;
+  }
+}
